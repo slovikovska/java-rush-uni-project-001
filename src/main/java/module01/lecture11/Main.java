@@ -6,4 +6,8 @@ public class Main {
         int b = 100;
         System.out.println(a + b);
     }
+
+    static void main() {
+        System.out.println("hello!");
+    }
 }

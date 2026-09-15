@@ -22,7 +22,12 @@ public class Building {
 
 
     public void setFloors(final int floors) {
-        this.floors = floors;
+        if (doors < 0) {
+            this.doors = 1;
+        } else {
+            this.floors = floors;
+        }
+
     }
 
     public void setDoors(final int doors) {
@@ -31,6 +36,11 @@ public class Building {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+
+    public void buildFull() {
+
     }
 }
 
